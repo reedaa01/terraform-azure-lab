@@ -25,3 +25,5 @@ resource "azurerm_resource_group" "terraform_lab" {
 # Terraform state : fichier d'etat qui suit les ressources et leur mapping reel.
 # In-place change vs replacement : modification sur place ou recreation complete d'une ressource.
 # terraform fmt : formate le code Terraform selon les conventions.
+# terraform state list : liste les ressources gerees par Terraform.
+# terraform state show <resource> : affiche les details d'une ressource specifique dans l'etat.
