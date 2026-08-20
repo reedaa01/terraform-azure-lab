@@ -31,7 +31,7 @@ Cochez chaque element une fois termine (Mark each item as complete as you finish
 - [*] Variables (Variables)
 - [*] Sorties (Outputs)
 - [*] Etat (State)
-- [*] Groupe de ressources Azure (Azure Resource Group)
+- [ * ] Groupe de ressources Azure (Azure Resource Group)
 
 **02 - Reseau VNet (Networking)**
 - [ ] VNet Azure (Azure VNet)
