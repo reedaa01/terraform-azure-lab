@@ -11,6 +11,9 @@ provider "azurerm" {
 resource "azurerm_resource_group" "terraform_lab" {
   name     = var.rsg
   location = var.location
+  tags = {
+    test = "code"
+  }
 }
 
 
