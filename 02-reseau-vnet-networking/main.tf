@@ -19,6 +19,12 @@ resource "azurerm_virtual_network" "terraform_dev_rg" {
 resource "azurerm_subnet" "terraform_dev_rg" {
   name                 = "terraform-public-subnet"
   resource_group_name  = "terraform-dev-rg"
-  virtual_network_name = "terraform-vnet"
+  virtual_network_name = azurerm_virtual_network.terraform_dev_rg.name
   address_prefixes     = ["10.0.1.0/24"]
+}
+resource "azurerm_subnet" "terraform_dev_rg_private" {
+  name                 = "terraform-private-subnet"
+  resource_group_name  = "terraform-dev-rg"
+  virtual_network_name = azurerm_virtual_network.terraform_dev_rg.name
+  address_prefixes     = ["10.0.2.0/24"]
 }
